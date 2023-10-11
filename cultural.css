@@ -1,0 +1,520 @@
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:400,400italic,500,500italic);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body , html{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  height: 100%;
+}
+
+.head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  padding: 20px 100px;
+  background-color: #010001;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* backdrop-filter: blur(10px); */
+  opacity: 1;
+  font-weight: bold;
+  /* border-bottom: 2px solid rgba(255, 255, 255, 0.2); */
+  z-index: 9999;
+}
+@keyframes navLinkFade {
+  from {
+      opacity: 0;
+      transform: translateY(-15px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.logo {
+    float: right;
+}
+.logo{
+  /* color: #fff; */
+  /* font-size: 25px; */
+  /* text-decoration: none; */
+  /* font-weight: 600; */
+  /* cursor: default; */
+  /* opacity: 1; */
+  /* font-weight: bolder; */
+  /* position: absolute; */
+   
+  /* top: -23%; */
+  /* left: 1%; */
+  /* right: auto; */
+  /* padding-left: -100px; */
+  width: 150px;
+  height: auto;
+  margin-left: -6%;
+}
+.navbars a {
+  /* color: #fff; */
+  font-size: 22px;
+  text-decoration: none;
+  margin-left: 35px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.navbars a span {
+  color: white;
+  font-weight: bolder;
+}
+
+.navbars a:hover {
+  color: white;
+}
+
+/* Base styles for the navbars */
+.navbars {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#menu-icon {
+  font-size: 3.6rem;
+  color: white;
+  display: none;
+  scroll-behavior: smooth;
+}
+
+/* BREAKPOINTS */
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  .head {
+    padding: 2rem 3%;
+  }
+  .logo {
+    
+    width: 150px;
+    height: auto;
+    margin-left: -2%;
+  }
+}
+
+@media (max-width: 1059px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbars {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background-color: #010001;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    max-height: 0;
+    opacity: 0.6;
+    overflow: hidden;
+  }
+  .navbars.active {
+    display: block;
+  }
+  .navbars a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+  .logo  {
+    width: 130px;
+    height: auto;
+    margin-left: -1%;
+  }
+}
+
+.nl {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nl::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #00e4ff;
+  transition: width 0.3s;
+}
+
+.nl:hover {
+  color:#00e4ff ;
+}
+
+
+.nl:hover::before {
+  width: 100%;
+}
+
+
+.ak {
+  /* font-size: larger; */
+  
+}
+  
+
+.container1 {
+  width: 80%;
+  margin: auto;
+  /* padding-top: 200px; */
+  text-align: center;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #8f8f8f;
+}
+.crow {
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-around;
+}
+.ccol {
+  flex-basis: 25%;
+  /* background-color: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;*/
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  /* .container1{
+    padding-top: 540px;
+  } */
+  .crow {
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  .ccard {
+    overflow: visible;
+    width: calc(50% - 20px); /* 50% width for two cards in a row with margin adjustment */
+    margin: 10px; /* Adjust as needed for spacing between cards */
+    height: 304px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 709px) {
+  .crow {
+    flex-direction: column;
+  }
+  .ccard {
+    overflow: visible;
+    margin: auto;
+    
+    box-sizing: border-box;
+  }
+}
+
+/* @media (min-width: 200px) {
+  .card-hoverme {
+    font-weight: bolder;
+    font-size: 40px;
+  }
+} */
+.ccard {
+  overflow: visible;
+  width: 250px;
+  height: 304px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 300ms;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+  border-radius: 5px;
+}
+
+.front,
+.back {
+  background-color: #151515;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.back::before {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 160px;
+  height: 160%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #00e4ff,
+    #00e4ff,
+    #00e4ff,
+    #00e4ff,
+    transparent
+  );
+  animation: rotation_481 5000ms infinite linear;
+}
+
+.back-content {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  background-color: #151515;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.ccard:hover .content {
+  transform: rotateY(180deg);
+}
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  0% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.front {
+  transform: rotateY(180deg);
+  color: white;
+}
+
+.front .front-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.front-content .badge {
+  background-color: #00000055;
+  padding: 2px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  width: fit-content;
+}
+
+.description {
+  /* box-shadow: 0px 0px 10px 5px #00000088; */
+  width: 100%;
+  padding: 10px;
+  /* background-color: #00000099; */
+  /* backdrop-filter: blur(5px); */
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 15px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.view {
+  /* float: right; */
+  /* margin-right: 8px; */
+  margin-left: 100px;
+  font-size: medium;
+  font-size: 15px;
+  transition: 0.5s;
+}
+.view:hover {
+  color: #00e4ff;
+}
+
+@media (max-width:768px) {
+  .ak {
+    font-size: 30px;
+  }
+  .cimg {
+    margin-top: 30px;
+  }
+  .ka {
+    font-size: 15px;
+  }
+}
+@media (max-width:1200px) {
+  .ak {
+    font-size: 30px;
+  }
+  .cimg {
+    margin-top: 30px;
+  }
+  .ka {
+    font-size: 15px;
+  }
+}
+.title p {
+  width: 50%;
+}
+
+.card-footer {
+  color: #ffffff88;
+  margin-top: 5px;
+  font-size: 8px;
+}
+
+.front .cimg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #ffbb66;
+  position: relative;
+  filter: blur(15px);
+  animation: floating 2600ms infinite linear;
+}
+
+#bottom {
+  background-color: #ff8866;
+  left: 50px;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  animation-delay: -800ms;
+}
+
+#right {
+  background-color: #ff2233;
+  left: 160px;
+  top: -80px;
+  width: 30px;
+  height: 30px;
+  animation-delay: -1800ms;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* video */
+
+/* Create a container for the video and content */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style the video element */
+#background-video {
+  position: fixed; /* Fixed position so it covers the entire viewport */
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit:cover;
+  z-index: -1; /* Place the video behind the content */
+}
+
+/* video */
+@media (min-width:900px) and (max-width:1600px) {
+  .video-container video{
+    padding-top: 75px;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+  }
+}
+@media (max-width:900px){
+  .video-container video{
+    padding-top: 75px;
+  width: 100%;
+  }
+}
+
+
+/* 1st video */
+#backvideos {
+  height: 50%; /* You can adjust the percentage to your desired height */
+}
+
+.videos {
+  height: 50%; /* Adjust the percentage accordingly to match the video height */
+}
+@media (max-width:768px) {
+  .videos {
+    margin-top: 40px;
+  }
+  
+}
+#backvideos {
+  height: 50%; /* You can adjust the percentage to your desired height */
+}
+
+.videos {
+  height: 50%; /* Adjust the percentage accordingly to match the video height */
+}
+
+
+.con {
+  position: relative;
+  z-index: 1;
+}

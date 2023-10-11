@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="akcss" rel="stylesheet"> -->
+    <!-- <script src="akcss.js"></script> -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home | IMAZE23</title>
+    
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="head">
+      <!-- <a href="#" class="logo"><img src="hori png1.png" width="40px" height="20px" alt=""></a> -->
+      <!-- <img src="hori png1.png" class="logo" alt=""> -->
+      <div class="logo">
+        <a href="index.html"><img src="Horizontal - White.png" alt="logo"></a>
+        <!-- style="filter: drop-shadow(7px 7px 7px #62ddff); -->
+      </div>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbars" >
+        <a href="tech.html"><span class="nl tech" >Tech</span></a>
+        <a href="non-tech.html"><span class="nl non-tech">Non-Tech</span></a>
+        <a href="flagship.html"><span class="nl flagship" >Flagship</span></a>
+        <a href="workshop.html"><span class="nl workshop" >Workshops</span></a>
+        <a href="team.html" ><span class="nl team">Team</span></a>
+      </nav>
+    </header>
+    <div class="con">
+      <div>
+        <div class="video-container">
+          <video autoplay muted loop id="background-video">
+              <source src="back.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <!-- <img src="ff.gif" alt=""> -->
+        </div>
+      </div>
+      <div>
+        <!-- 1st video -->
+        <div class="videos" >
+          <video autoplay muted loop id="backvideos">
+              <source src="Technical.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <!-- <img src="ff.gif" alt=""> -->
+        </div>
+      </div>
+        <div class="youtube">
+        <!-- <center><h1 class="catch">CATCH THE GLIMPSE</h1></center> -->
+        <div class="crow">
+          <div class="ccol">
+            <div class="card">
+              <iframe width="350" height="235" src="https://www.youtube.com/embed/wOCyZYkMlVU?si=t8FS87ktxDLMEq8_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="ccol">
+            <div class="card">
+              <iframe width="350" height="235" src="https://www.youtube.com/embed/wt7m8NYYYuc?si=KvBExP-HpMd7s7gm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="ccol">
+            <div class="card">
+              <iframe width="350" height="235" src="https://www.youtube.com/embed/-RAFDMyo02k?si=D1tnc7gPJMITKQ--" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- <div class="flashback">
+          <center><h1 class="flash">FLASHBACK</h1></center>
+          <div class="crows">
+            <div class="ccols">
+              <div class="cards">
+                <img src="first.jpg" alt="" class="photo">
+                <div class="content">
+                <ul class="sci">
+                  <li>
+                    <a href="https://www.instagram.com/p/CZW-r5dMN_K/?utm_source=ig_web_copy_link">
+                      <svg class="fa-brands fa-instagram" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+            <div class="ccols">
+              <div class="cards">
+                <img src="second.jpg" alt="" class="photo">
+                <div class="content">
+                <ul class="sci">
+                  <li>
+                    <a href="https://www.instagram.com/p/CbxIgmbo-9y/?utm_source=ig_web_copy_link">
+                      <svg class="fa-brands fa-instagram" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+            <div class="ccols">
+              <div class="cards">
+                <img src="third.jpg" alt="" class="photo" height="310px" width="250px">
+                <div class="content">
+                <ul class="sci">
+                  <li>
+                    <a href="https://www.instagram.com/p/CdyAachMUeS/?utm_source=ig_web_copy_link">
+                      <svg class="fa-brands fa-instagram" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+          </div>
+          </div> -->
+          <div class="gallery">
+            <center><h1 class="gal">GALLERY</h1></center>
+            <section>
+                <div class="swiper">
+                  <div class="swiper-wrapper radhe">
+                    <div class="swiper-slide swiper-slide--one">
+                      
+                    </div>
+                    <div class="swiper-slide swiper-slide--two">
+                      
+                    </div>
+              
+                    <div class="swiper-slide swiper-slide--three">
+                      
+                    </div>
+              
+                    <div class="swiper-slide swiper-slide--four">
+                      
+                    </div>
+              
+                    <div class="swiper-slide swiper-slide--five">
+                      
+                    </div>
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="sswiper-pagination"></div>
+                </div>
+              </section>
+          </div>
+          <!-- <div class="spons">
+            <center><h1 class="sgal">OUR SPONSORS</h1></center>
+            <div class="smain">
+              <div class="sswiper">
+                <div class="sswiper-wrapper">
+                  <div class="scard swiper-slide">
+                    <div class="card__content">
+                    <img class="spim" src="shah.jpg" alt=""></div>
+                    </div>
+                  <div class="scard swiper-slide">
+                    <div class="card__content">
+                    <img class="spim" src="shah.jpg" alt=""></div>
+                    </div>
+                  <div class="scard swiper-slide">
+                    <div class="card__content">
+                    <img class="spim" src="shah.jpg" alt=""></div>
+                    </div>
+                  <div class="scard swiper-slide">
+                    <div class="card__content">
+                    <img class="spim" src="shah.jpg" alt=""></div>
+                    </div>
+                  <div class="scard swiper-slide">
+                    <div class="card__content">
+                    <img class="spim" src="shah.jpg" alt=""></div>
+                    </div>
+                  <div class="scard swiper-slide">
+                    <div class="card__content">
+                    <img class="spim" src="shah.jpg" alt=""></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+    </div> -->
+    <div class="sgallery">
+      <center><h1 class="sgal">OUR SPONSORS</h1></center>
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <!-- <img src="shah.jpg" alt=""> -->
+            <div class="scard">
+              <div class="card__content">
+              <img src="Vihal_ut959g.png" class="vi" alt=""></div>
+              </div>              
+          </div>
+          <div class="slide">
+            <!-- <img src="shah.jpg" alt=""> -->
+            <div class="scard">
+              <div class="card__content">
+              <img src="Vihal_ut959g.png" class="vi" alt=""></div>
+              </div>              
+          </div>
+          <div class="slide">
+            <!-- <img src="shah.jpg" alt=""> -->
+            <div class="scard">
+              <div class="card__content">
+              <img src="Vihal_ut959g.png" class="vi" alt=""></div>
+              </div>              
+          </div>
+          <div class="slide">
+            <!-- <img src="shah.jpg" alt=""> -->
+            <div class="scard">
+              <div class="card__content">
+              card</div>
+              </div>              
+          </div>
+          <div class="slide">
+            <!-- <img src="shah.jpg" alt=""> -->
+            <div class="scard">
+              <div class="card__content">
+              card</div>
+              </div>              
+          </div>
+          <div class="slide">
+            <!-- <img src="shah.jpg" alt=""> -->
+            <div class="scard">
+              <div class="card__content">
+              card</div>
+              </div>              
+          </div>
+          <div class="slide">
+            <!-- <img src="shah.jpg" alt=""> -->
+            <div class="scard">
+              <div class="card__content">
+              card</div>
+              </div>              
+          </div>
+          <div class="slide">
+            <!-- <img src="shah.jpg" alt=""> -->
+            <div class="scard">
+              <div class="card__content">
+              card</div>
+              </div>              
+          </div>
+          <div class="slide">
+            <!-- <img src="shah.jpg" alt=""> -->
+            <div class="scard">
+              <div class="card__content">
+              card</div>
+              </div>              
+          </div>
+          <div class="slide">
+            <!-- <img src="shah.jpg" alt=""> -->
+            <div class="scard">
+              <div class="card__content">
+              card</div>
+              </div>              
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <!-- <center><h1 class="sgal">OUR SPONSORS</h1></center> -->
+      <div class="flogo">
+        <img src="cvm logo.png" class="imglogo" alt="">
+        <h4 class="collegename">G H Patel College of Engineering & Technology</h4>
+      </div>
+      </div>
+    <script src="script.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+  </body>
+</html>
+

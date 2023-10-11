@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="culturalde.css">
+    
+    <title>description</title>
+</head>
+<body>
+      <!-- navbar -->
+      <header class="head">
+        <div class="logo">
+          <a href="../index.html"><img src="../Horizontal - White.png" alt="logo"></a>
+        </div>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbars" >
+          <a href="../index.html"><span class="nl home" >Home</span></a>
+          <a href="../tech.html"><span class="nl tech" >Tech</span></a>
+          <a href="../non-tech.html"><span class="nl non-tech">Non-Tech</span></a>
+          <a href="../flagship.html"><span class="nl flagship" >Flagship</span></a>
+          <a href="../workshop.html"><span class="nl workshop" >Workshops</span></a>
+          <a href="../cultural.html"><span class="nl cultural">Cultural</span></a>
+          <a href="../team.html" ><span class="nl team">Team</span></a>
+        </nav>
+      </header>
+
+      <div class="con">
+        <div>
+            <div class="video-container">
+              <video autoplay muted loop id="background-video">
+                  <source src="../back.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+      </div>
+     <div class="component">
+        <div class="scrollable-content">
+            <h1 class="title" align="center">${event.name}</h1>
+            <div class="space">
+            
+              <p style="margin-top: 3px; text-align: justify; margin: 0 25px; font-size: 17px;">
+               ${event.description}
+                
+              </p>
+                
+            </div>
+        </div>
+     </div>
+</body>
+</html>

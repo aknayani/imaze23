@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="codeblitz.css">
+    <script src="./script.js" async></script>
+    
+    <title>description</title>
+</head>
+<body>
+      <!-- navbar -->
+      <header class="head">
+        <div class="logo">
+          <a href="../index.html"><img src="../Horizontal - White.png" alt="logo"></a>
+        </div>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbars" >
+          <a href="../index.html"><span class="nl home" >Home</span></a>
+          <a href="../tech.html"><span class="nl tech" >Tech</span></a>
+          <a href="../non-tech.html"><span class="nl non-tech">Non-Tech</span></a>
+          <a href="../flagship.html"><span class="nl flagship" >Flagship</span></a>
+          <a href="../workshop.html"><span class="nl workshop" >Workshops</span></a>
+          <a href="../cultural.html"><span class="nl cultural">Cultural</span></a>
+          <a href="../team.html" ><span class="nl team">Team</span></a>
+        </nav>
+      </header>
+
+      <div class="con">
+        <div>
+            <div class="video-container">
+              <video autoplay muted loop id="background-video">
+                  <source src="../back.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+      </div>
+     <div class="component">
+        <div class="scrollable-content">
+           
+        </div>
+     </div>
+     <script src="../script.js"></script>
+     <script async>
+        let current_url  = window.location.href;
+        let event_id = current_url.split('?')[1];
+        async function fetch_event(event_id){
+          var resp = await fetch(`http://3.109.100.118:8000/api/v1/user/events/${event_id}?type=NORMAL`)
+          var data = await resp.json();
+          let event = data.data;
+          if(event === undefined){
+            resp =  await fetch(`http://3.109.100.118:8000/api/v1/user/events/${event_id}?type=FLAGSHIP`)
+            data = await resp.json();
+            event = data.data;
+          }
+          console.log("event:",resp);
+          const section = document.querySelector(".scrollable-content");
+          let html_string =  `
+            <h1 class="title" align="center">${event.name}</h1>
+              <div class="space">
+              
+                <p style="margin-top: 3px; text-align: justify; margin: 0 25px; font-size: 17px;">
+                 ${event.description}
+                  
+                </p>
+                  
+              </div>
+          `
+          section.innerHTML= html_string;
+        }
+        fetch_event(event_id);
+     </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="akcss" rel="stylesheet"> -->
+    <!-- <script src="akcss.js"></script> -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="tech.css" />
+    <title>Tech | IMAZE23</title>
+    <style>
+      .tech {
+        color: #00e4ff;
+        text-decoration: underline;
+      }
+      .tech:hover {
+        color: #00e4ff;
+      }
+      .tech:hover::before {
+        width: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="head">
+      <!-- <a href="#" class="logo"><img src="hori png1.png" width="40px" height="20px" alt=""></a> -->
+
+      <!-- <img src="hori png1.png" class="logo" alt=""> -->
+      <div class="logo">
+        <a href="index.html"><img src="Horizontal - White.png" alt="logo" /></a>
+        <!-- style="filter: drop-shadow(7px 7px 7px #62ddff); -->
+      </div>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbars">
+        <a href="index.html"><span class="nl home">Home</span></a>
+        <a href="tech.html"><span class="nl tech">Tech</span></a>
+        <a href="non-tech.html"><span class="nl non-tech">Non-Tech</span></a>
+        <a href="flagship.html"><span class="nl flagship">Flagship</span></a>
+        <a href="workshop.html"><span class="nl workshop">Workshops</span></a>
+        <a href="cultural.html"><span class="nl cultural">Cultural</span></a>
+        <a href="team.html"><span class="nl team">Team</span></a>
+      </nav>
+    </header>
+    <div class="con">
+      <div>
+        <div class="video-container">
+          <video autoplay muted loop id="background-video">
+            <source src="back.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <!-- <img src="ff.gif" alt=""> -->
+        </div>
+      </div>
+      <div>
+        <!-- 1st video -->
+        <div class="videos">
+          <video autoplay muted loop id="backvideos">
+            <source src="Technical.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <!-- <img src="ff.gif" alt=""> -->
+        </div>
+      </div>
+      <div>
+        <section class="container1 tech-container" >
+          <center>
+            <h1
+              style="
+                font-weight: bolder;
+                font-size: 40px;
+                padding-top: 5%;
+                color: white;
+              "
+            >
+              Events
+            </h1>
+          </center>
+        </section>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="./techevent/script.js" defer async></script>
+
+  </body>
+</html>
