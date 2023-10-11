@@ -164,7 +164,6 @@ body , html{
     height: 50%; /* Adjust the percentage accordingly to match the video height */
   }
   .videos {
-    margin-top: 54.55px;
     /* margin-top: 63%; */
     /* margin-top: 331.45px; */display: flex;
 justify-content: center;
